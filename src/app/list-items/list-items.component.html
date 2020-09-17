@@ -1,0 +1,18 @@
+
+<div style="border-color: red; border-style: solid;">
+THIS IS LIST ITEMS
+
+<div class="col-lg" style="text-align: left;">
+    <button type="button" class="btn btn-primary btn-sm" tooltip="Add List Item" routerLink="/list-item" routerLinkActive="active">
+      Add List Item
+    </button>
+</div>
+
+Count = {{_localListItems.length}}
+<table>
+    <tr *ngFor="let item of _localListItems">
+
+        <td>{{ item }}</td>
+    </tr>
+</table>
+</div>

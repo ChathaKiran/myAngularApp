@@ -1,0 +1,30 @@
+<h3>Calculator</h3>
+
+<div class="calculator">
+    <input type="text" class="calculator-screen" [value]="numberToDisplay" disabled />
+  
+    <div class="calculator-keys">
+        <button type="button" (click) = "onOperatorClicked('+')" class="operator" value="+">+</button>
+        <button type="button" (click) = "onOperatorClicked('-')" class="operator" value="-">-</button>
+        <button type="button" (click) = "onOperatorClicked('*')" class="operator" value="*">&times;</button>
+        <button type="button" (click) = "onOperatorClicked('/')" class="operator" value="/">&divide;</button>
+
+        <button type="button" (click) = "onDigitClicked('7')" value="7">7</button>
+        <button type="button" (click) = "onDigitClicked('8')" value="8">8</button>
+        <button type="button" (click) = "onDigitClicked('9')" value="9">9</button>
+  
+        <button type="button" (click) = "onDigitClicked('4')" value="4">4</button>
+        <button type="button" (click) = "onDigitClicked('5')" value="5">5</button>
+        <button type="button" (click) = "onDigitClicked('6')" value="6">6</button>
+  
+        <button type="button" (click) = "onDigitClicked('1')" value="1">1</button>
+        <button type="button" (click) = "onDigitClicked('2')" value="2">2</button>
+        <button type="button" (click) = "onDigitClicked('3')" value="3">3</button>
+  
+        <button type="button" (click) = "onDigitClicked('0')" value="0">0</button>
+        <button type="button" (click) = "onDecimalClicked()" class="decimal" value=".">.</button>
+        <button type="button" (click) = "onAllClearClicked()"  class="all-clear" value="all-clear">AC</button>
+  
+        <button type="button" (click) = "onOperatorClicked('=')" class="equal-sign" value="=">=</button>
+    </div>
+  </div>

@@ -1,0 +1,8 @@
+1. [ngClass] is used when css classes needs to be applied conditionally. Usage: [ngClass] or ng-class
+    <button ng-class="row.bstatus?'btn red btn-outline':'btn green-haze btn-outline'">
+        {{row.bstatus?'Deactivate':'Activate' }}
+    </button>
+
+    <button class={{"row.bstatus?'btn red btn-outline':'btn green-haze btn-outline'"}}>
+        {{row.bstatus?'Deactivate':'Activate' }}
+    </button>    
